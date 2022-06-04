@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS job_descriptions;
+DROP TABLE IF EXISTS managers;
+DROP TABLE IF EXISTS salaries;
+DROP TABLE IF EXISTS employees;
+DROP TABLE IF EXISTS departments;
+DROP TABLE IF EXISTS locations;
+DROP TABLE IF EXISTS job_titles;
+DROP TABLE IF EXISTS education_levels;
