@@ -184,14 +184,14 @@ FROM
 ![data architecture](images/S08.png)
 ```
 SELECT 
-	fact_review.date,
+    fact_review.date,
     dimension_business.name,
-    dimension_precipitation.precipitation,
-    dimension_precipitation.precipitation_normal,
-    dimension_temperature.min,
-    dimension_temperature.max,
-    dimension_temperature.normal_min,
-    dimension_temperature.normal_max,
+    dimension_climate.precipitation,
+    dimension_climate.precipitation_normal,
+    dimension_climate.min,
+    dimension_climate.max,
+    dimension_climate.normal_min,
+    dimension_climate.normal_max,
     fact_review.stars,
     fact_review.useful,
     fact_review.funny,
@@ -201,7 +201,5 @@ FROM
 		JOIN
     dimension_business ON dimension_business.business_id = fact_review.business_id
 		JOIN
-	dimension_temperature ON dimension_temperature.temperature_id = fact_review.temperature_id
-        JOIN
-    dimension_precipitation ON dimension_precipitation.precipitation_id = fact_review.precipitation_id;
+	dimension_climate ON dimension_climate.climate_uid = fact_review.climate_uid
 ```
