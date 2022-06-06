@@ -1,3 +1,4 @@
+*.mp4
 .venv
 Designing HR DB/docker/pgadmin/**
 Designing HR DB/docker/postgres/**
